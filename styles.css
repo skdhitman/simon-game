@@ -3,18 +3,18 @@ body {
   /* background-color: #011F3F; */
   background-image: url("images/game-background.jpg");
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #game-greeting {
   font-family: 'special Elite', cursive;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin:  5%;
   color: #80ffdb;   /* FEF2BF */
 }
@@ -42,7 +42,7 @@ a:active {
 }
 
 .rem-2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -55,8 +55,8 @@ a:active {
 .btn {
   margin: 25px;
   display: inline-block;
-  height: 250px;
-  width: 250px;
+  height: 150px;
+  width: 150px;
   border: 10px solid black;
   background-color: #fdffbc;
   border-radius: 20%;
