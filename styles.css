@@ -1,0 +1,88 @@
+body {
+  text-align: center;
+  /* background-color: #011F3F; */
+  background-image: url("images/game-background.jpg");
+  color: white;
+  font-size: 2rem;
+}
+
+#game-greeting {
+  font-family: 'special Elite', cursive;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #80ffdb;   /* FEF2BF */
+}
+
+.footer {
+  font-size: 1.5rem;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+#copyright {
+  margin-bottom: 0;
+}
+
+a, a:link {
+  color: #c6ebc9;
+}
+
+a:active {
+  color: #96bb7c;
+}
+
+.game-over-title {
+  color: #fdffbc;
+}
+
+.rem-2 {
+  font-size: 2rem;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  border: 10px solid black;
+  background-color: #fdffbc;
+  border-radius: 20%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
