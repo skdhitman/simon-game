@@ -41,7 +41,7 @@ function comparePatterns(currentLevel) {
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
-    $("#level-title").html("<span>Game Over!</span><br><h2>Your final level was " + level + ".<br><br>Press Any Key to Restart..</h2>");
+    $("#level-title").html("<span>Game Over!</span><br><h2>Your final level was " + (level-1) + ".<br><br>Press Any Key / Tap Anywhere on your screen, to Restart..</h2>");
     $("h1 h2").addClass("rem-2");
     $("h1 span").addClass("game-over-title");
     setTimeout(function () {
@@ -57,12 +57,8 @@ function startOver() {
   level = 0;
 }
 
-// $("#" + chosenColour).animate({opacity: 0.5});
-// $("#" + chosenColour).fadeOut(100).fadeIn(100);
-
 
 // Defining event handler on any 'Key Press' in the start
-
 $(document).keypress(function () {
   if (!gameStart) {
     $("#level-title").text("Level " + level);
@@ -71,6 +67,18 @@ $(document).keypress(function () {
     // $("h1 h2").removeClass("rem-2");
     // $("h1 span").removeClass("game-over-title");
   }
+});
+
+
+$(document).on('touchstart', function() {
+    detectTap = true; // Detects all touch events
+      if (!gameStart) {
+        $("#level-title").text("Level " + level);
+        nextSequence();
+        gameStart = true;
+        // $("h1 h2").removeClass("rem-2");
+        // $("h1 span").removeClass("game-over-title");
+      }
 });
 
 
